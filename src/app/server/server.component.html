@@ -1,0 +1,11 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <input [(ngModel)]="value" class="mb-2 form-control" type="text">
+            <p *ngFor="let server of servers" [ngStyle]="{backgroundColor: getColor()}">Server {{server}}</p>
+            <button class="btn btn-primary" [disabled]="value === ''" (click)="submit()">Enviar</button>
+            <button class="btn btn-danger" (click)="value = ''">Resetar</button>
+            <h2 *ngIf="valueChanged"><b>O valor é: </b>{{value}}</h2>
+        </div>
+    </div>
+</div>

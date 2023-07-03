@@ -1,0 +1,9 @@
+h1 {
+    color: blueviolet;
+}
+p {
+    padding: 1rem;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+}
